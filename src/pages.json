@@ -1,9 +1,135 @@
 {
-	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+	"easycom": {
+		"autoscan": true,
+		"custom": {
+			"^uni-(.*)": "@dcloudio/uni-ui/lib/uni-$1/uni-$1.vue"
+		}
+	},
+	"pages": [ 
 		{
 			"path": "pages/index/index",
 			"style": {
-				"navigationBarTitleText": "uni-app"
+				"navigationBarTitleText": "君可归后台"
+			}
+		},
+		{
+			"path": "pages/login",
+			"style": {
+				"navigationBarTitleText": "登录"
+			}
+		},
+		{
+			"path": "pages/home/home",
+			"style": {
+				"navigationBarTitleText": "君可归后台"
+			}
+		},
+		{
+			"path": "pages/user/pwd",
+			"style": {
+				"navigationBarTitleText": "修改密码"
+			}
+		},
+		{
+			"path": "pages/user/information",
+			"style": {
+				"navigationBarTitleText": "个人信息"
+			}
+		},
+		{
+			"path": "pages/article/index",
+			"style": {
+				"navigationBarTitleText": "志愿者文章"
+			}
+		},
+		{
+			"path": "pages/article_seeker/index",
+			"style": {
+				"navigationBarTitleText": "寻亲者文章"
+			}
+		},
+		{
+			"path": "pages/articleDetail/index",
+			"style": {
+				"navigationBarTitleText": "文章审核"
+			}
+		},
+		{
+			"path": "pages/admin/home/index",
+			"style": {
+				"navigationBarTitleText": "管理员"
+			}
+		},
+		{
+			"path": "pages/admin/home/information",
+			"style": {
+				"navigationBarTitleText": "管理员"
+			}
+		},
+		{
+			"path": "pages/volunteer/index",
+			"style": {
+				"navigationBarTitleText": "志愿者"
+			}
+		},
+		{
+			"path": "pages/volunteer/information",
+			"style": {
+				"navigationBarTitleText": "志愿者"
+			}
+		},
+		{
+			"path": "pages/seeker/index",
+			"style": {
+				"navigationBarTitleText": "寻亲者"
+			}
+		},
+		{
+			"path": "pages/seeker/information",
+			"style": {
+				"navigationBarTitleText": "寻亲者"
+			}
+		},
+		{
+			"path": "pages/position/index",
+			"style": {
+				"navigationBarTitleText": "归属地"
+			}
+		},
+		{
+			"path": "pages/role/index",
+			"style": {
+				"navigationBarTitleText": "权限"
+			}
+		},
+		{
+			"path": "pages/role/information",
+			"style": {
+				"navigationBarTitleText": "权限"
+			}
+		},
+		{
+			"path": "pages/martyr/index",
+			"style": {
+				"navigationBarTitleText": "烈士"
+			}
+		},
+		{
+			"path": "pages/martyrCemetery/index",
+			"style": {
+				"navigationBarTitleText": "陵园"
+			}
+		},
+		{
+			"path": "pages/martyrCemetery/information",
+			"style": {
+				"navigationBarTitleText": "陵园"
+			}
+		},
+		{
+			"path": "pages/martyr/information",
+			"style": {
+				"navigationBarTitleText": "烈士"
 			}
 		}
 	],
@@ -11,6 +137,47 @@
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "uni-app",
 		"navigationBarBackgroundColor": "#F8F8F8",
-		"backgroundColor": "#F8F8F8"
+		"backgroundColor": "#F8F8F8",
+		"usingComponents": {
+			"van-button": "/wxcomponents/button/index",
+			"van-field": "/wxcomponents/field/index",
+			"van-switch": "/wxcomponents/switch/index",
+			"van-search": "/wxcomponents/search/index",
+			"van-cell-group": "/wxcomponents/cell-group/index",
+			"van-cell": "/wxcomponents/cell/index",
+			"van-radio": "/wxcomponents/radio/index",
+			"van-radio-group": "/wxcomponents/radio-group/index",
+			"van-checkbox": "/wxcomponents/checkbox/index",
+			"van-checkbox-group": "/wxcomponents/checkbox-group/index",
+			"van-picker": "/wxcomponents/picker/index",
+			"van-popup": "/wxcomponents/popup/index",
+			"van-grid": "/wxcomponents/grid/index",
+			"van-grid-item": "/wxcomponents/grid-item/index",
+			"van-row": "/wxcomponents/row/index",
+			"van-col": "/wxcomponents/col/index",
+			"van-count-down": "/wxcomponents/count-down/index",
+			"van-icon": "/wxcomponents/icon/index",
+			"van-tab": "/wxcomponents/tab/index",
+			"van-tabs": "/wxcomponents/tabs/index",
+			"van-divider": "/wxcomponents/divider/index",
+			"van-dialog": "/wxcomponents/dialog/index",
+			"van-toast": "/wxcomponents/toast/index",
+			"van-stepper": "/wxcomponents/stepper/index",
+			"van-slider": "/wxcomponents/slider/index",
+			"van-tag": "/wxcomponents/tag/index",
+			"van-loading": "/wxcomponents/loading/index",
+			"van-overlay": "/wxcomponents/overlay/index",
+			"van-collapse": "/wxcomponents/collapse/index",
+			"van-collapse-item": "/wxcomponents/collapse-item/index",
+			"van-dropdown-item": "/wxcomponents/dropdown-item/index",
+			"van-dropdown-menu": "/wxcomponents/dropdown-menu/index",
+			"van-empty": "/wxcomponents/empty/index",
+			"van-notice-bar": "/wxcomponents/notice-bar/index",
+			"van-image": "/wxcomponents/image/index",
+			"van-datetime-picker": "/wxcomponents/datetime-picker/index",
+			"van-uploader": "/wxcomponents/uploader/index",
+			"van-action-sheet": "/wxcomponents/action-sheet/index",
+			"van-swipe-cell": "/wxcomponents/swipe-cell/index"
+		}
 	}
 }

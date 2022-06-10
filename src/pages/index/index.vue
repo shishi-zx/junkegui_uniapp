@@ -1,49 +1,34 @@
 <template>
-	<view class="content">
-		<image class="logo" src="/static/logo.png"></image>
-		<view>
-			<text class="title">{{title}}</text>
-		</view>
-	</view>
+	<my-link to="/pages/login" navType="push">
+		<div class="container"></div>
+	</my-link>
 </template>
 
 <script>
-	export default {
-		data() {
-			return {
-				title: 'Hello'
-			}
-		},
-		onLoad() {
-
-		},
-		methods: {
-
-		}
-	}
+export default {
+	data() {
+		return {
+			title: "Hello",
+		};
+	},
+	onLoad() { },
+	methods: {
+	},
+};
 </script>
 
-<style>
-	.content {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-	}
+<style scoped>
+.container {
+	height: 100vh;
+	background: rgb(225, 205, 205);
+	background-image: url("https://minitest-1309252537.cos.ap-beijing.myqcloud.com/hero.jfif");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: -800rpx 0;
+}
 
-	.logo {
-		height: 200rpx;
-		width: 200rpx;
-		margin: 200rpx auto 50rpx auto;
-	}
-
-	.text-area {
-		display: flex;
-		justify-content: center;
-	}
-
-	.title {
-		font-size: 36rpx;
-		color: #8f8f94;
-	}
+.link {
+	height: 100vh;
+	background: #000;
+}
 </style>

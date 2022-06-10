@@ -2,6 +2,7 @@
 	export default {
 		onLaunch: function() {
 			console.log('App Launch')
+			console.log('开发者：shishi');
 		},
 		onShow: function() {
 			console.log('App Show')
